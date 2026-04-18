@@ -1,0 +1,124 @@
+{
+  "created_at_utc": "2026-04-01T10:53:06.428369+00:00",
+  "replications": 2,
+  "methods": [
+    "tbema",
+    "exact_baseline",
+    "dersimonian_laird",
+    "henmi_copas"
+  ],
+  "scenarios": [
+    {
+      "name": "moderate_bias",
+      "description": "Moderate publication bias with modest heterogeneity and mostly randomized evidence.",
+      "config": {
+        "seed": 20260401,
+        "studies": 24,
+        "moderator_count": 2,
+        "target_effect": -0.35,
+        "heterogeneity": 0.18,
+        "rare_event_logit": -3.1,
+        "publication_strength": 0.75,
+        "observational_fraction": 0.25,
+        "observational_design_strength": 0.65,
+        "observational_bias_intercept": 0.18,
+        "observational_bias_slope": 0.12,
+        "target_profile": [
+          0.0,
+          0.0
+        ],
+        "study_profile_shift": [
+          0.0,
+          0.0
+        ],
+        "selection_floor": 0.18,
+        "selection_ceiling": 0.92,
+        "min_observed_studies": 12
+      }
+    },
+    {
+      "name": "sparse_high_bias",
+      "description": "Rare events and stronger publication bias, stressing sparse-data corrections.",
+      "config": {
+        "seed": 20260401,
+        "studies": 24,
+        "moderator_count": 2,
+        "target_effect": -0.35,
+        "heterogeneity": 0.26,
+        "rare_event_logit": -4.1,
+        "publication_strength": 1.55,
+        "observational_fraction": 0.35,
+        "observational_design_strength": 0.55,
+        "observational_bias_intercept": 0.18,
+        "observational_bias_slope": 0.12,
+        "target_profile": [
+          0.0,
+          0.0
+        ],
+        "study_profile_shift": [
+          0.0,
+          0.0
+        ],
+        "selection_floor": 0.18,
+        "selection_ceiling": 0.92,
+        "min_observed_studies": 12
+      }
+    },
+    {
+      "name": "transport_shift",
+      "description": "Study populations are shifted away from the target population, rewarding transport-aware pooling.",
+      "config": {
+        "seed": 20260401,
+        "studies": 24,
+        "moderator_count": 2,
+        "target_effect": -0.35,
+        "heterogeneity": 0.24,
+        "rare_event_logit": -3.5,
+        "publication_strength": 1.0,
+        "observational_fraction": 0.35,
+        "observational_design_strength": 0.55,
+        "observational_bias_intercept": 0.18,
+        "observational_bias_slope": 0.12,
+        "target_profile": [
+          0.0,
+          0.0
+        ],
+        "study_profile_shift": [
+          1.1,
+          -0.9
+        ],
+        "selection_floor": 0.18,
+        "selection_ceiling": 0.92,
+        "min_observed_studies": 12
+      }
+    },
+    {
+      "name": "mixed_credibility",
+      "description": "Heavy observational contamination and higher heterogeneity, stressing design-strength discounting.",
+      "config": {
+        "seed": 20260401,
+        "studies": 26,
+        "moderator_count": 2,
+        "target_effect": -0.35,
+        "heterogeneity": 0.34,
+        "rare_event_logit": -3.3,
+        "publication_strength": 0.9,
+        "observational_fraction": 0.55,
+        "observational_design_strength": 0.42,
+        "observational_bias_intercept": 0.24,
+        "observational_bias_slope": 0.16,
+        "target_profile": [
+          0.0,
+          0.0
+        ],
+        "study_profile_shift": [
+          0.0,
+          0.0
+        ],
+        "selection_floor": 0.18,
+        "selection_ceiling": 0.92,
+        "min_observed_studies": 12
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "created_at_utc": "2026-04-01T11:01:55.412909+00:00",
+  "overall_method_metrics": [
+    {
+      "method": "dersimonian_laird",
+      "successful_runs": 8,
+      "scenario_count": 4,
+      "bias": 0.1328692011,
+      "mean_absolute_error": 0.3291502089,
+      "rmse": 0.4409159182,
+      "coverage_95": 0.75,
+      "mean_ci_width": 0.8939045646,
+      "mean_tau": 0.3064662015,
+      "mean_elapsed_sec": 0.0005647244
+    },
+    {
+      "method": "henmi_copas",
+      "successful_runs": 8,
+      "scenario_count": 4,
+      "bias": 0.2141146367,
+      "mean_absolute_error": 0.4089318823,
+      "rmse": 0.4747391387,
+      "coverage_95": 0.625,
+      "mean_ci_width": 1.0105609065,
+      "mean_tau": 0.3064662015,
+      "mean_elapsed_sec": 0.3876427645
+    },
+    {
+      "method": "exact_baseline",
+      "successful_runs": 8,
+      "scenario_count": 4,
+      "bias": -0.0795498498,
+      "mean_absolute_error": 0.5237204478,
+      "rmse": 0.6026853615,
+      "coverage_95": 0.5,
+      "mean_ci_width": 1.0169619404,
+      "mean_tau": 0.4387598324,
+      "mean_elapsed_sec": 0.6712619606
+    },
+    {
+      "method": "tbema",
+      "successful_runs": 8,
+      "scenario_count": 4,
+      "bias": -0.1748609563,
+      "mean_absolute_error": 0.6352319058,
+      "rmse": 0.8255055022,
+      "coverage_95": 1.0,
+      "mean_ci_width": 3.5333736168,
+      "mean_tau": 0.1855663504,
+      "mean_elapsed_sec": 8.4175555585
+    }
+  ],
+  "figure_paths": {
+    "bias": "results/benchmarks/report/figures/bias_by_scenario.png",
+    "rmse": "results/benchmarks/report/figures/rmse_by_scenario.png",
+    "coverage": "results/benchmarks/report/figures/coverage_by_scenario.png",
+    "speed_accuracy": "results/benchmarks/report/figures/speed_accuracy_frontier.png"
+  }
+}

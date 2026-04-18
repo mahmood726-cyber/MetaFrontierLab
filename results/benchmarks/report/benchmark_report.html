@@ -1,0 +1,255 @@
+<html><head><meta charset='utf-8'><title>MetaFrontierLab Benchmark Report</title>
+<style>
+body{font-family:Georgia,serif;max-width:1100px;margin:40px auto;padding:0 24px;line-height:1.5;color:#1c1c1c;}
+h1,h2,h3{font-family:'Trebuchet MS',sans-serif;}
+table{border-collapse:collapse;width:100%;margin:16px 0;}
+th,td{border:1px solid #d7d7d7;padding:8px 10px;text-align:left;font-size:14px;}
+th{background:#f2efe7;}
+img{max-width:100%;margin:12px 0 28px 0;border:1px solid #ddd;}
+code{background:#f7f4ef;padding:1px 4px;border-radius:4px;}
+.muted{color:#555;}
+</style></head><body>
+<h1>MetaFrontierLab Benchmark Report</h1>
+<p class='muted'>Generated: <code>2026-04-01T10:53:06.428369+00:00</code></p>
+<h2>Scope</h2>
+<p>Replications per scenario: <code>2</code><br>Methods: <code>tbema, exact_baseline, dersimonian_laird, henmi_copas</code><br>Scenarios: <code>4</code></p>
+<h2>Overall Method Ranking</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>method</th>
+      <th>successful_runs</th>
+      <th>bias</th>
+      <th>mean_absolute_error</th>
+      <th>rmse</th>
+      <th>coverage_95</th>
+      <th>mean_ci_width</th>
+      <th>mean_elapsed_sec</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>dersimonian_laird</td>
+      <td>8</td>
+      <td>0.133</td>
+      <td>0.329</td>
+      <td>0.441</td>
+      <td>0.750</td>
+      <td>0.894</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>henmi_copas</td>
+      <td>8</td>
+      <td>0.214</td>
+      <td>0.409</td>
+      <td>0.475</td>
+      <td>0.625</td>
+      <td>1.011</td>
+      <td>0.388</td>
+    </tr>
+    <tr>
+      <td>exact_baseline</td>
+      <td>8</td>
+      <td>-0.080</td>
+      <td>0.524</td>
+      <td>0.603</td>
+      <td>0.500</td>
+      <td>1.017</td>
+      <td>0.671</td>
+    </tr>
+    <tr>
+      <td>tbema</td>
+      <td>8</td>
+      <td>-0.175</td>
+      <td>0.635</td>
+      <td>0.826</td>
+      <td>1.000</td>
+      <td>3.533</td>
+      <td>8.418</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Scenario Table</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>scenario</th>
+      <th>method</th>
+      <th>successful_runs</th>
+      <th>bias</th>
+      <th>rmse</th>
+      <th>coverage_95</th>
+      <th>mean_ci_width</th>
+      <th>mean_elapsed_sec</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mixed_credibility</td>
+      <td>dersimonian_laird</td>
+      <td>2</td>
+      <td>0.036</td>
+      <td>0.055</td>
+      <td>1.000</td>
+      <td>1.069</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>mixed_credibility</td>
+      <td>exact_baseline</td>
+      <td>2</td>
+      <td>-0.539</td>
+      <td>0.588</td>
+      <td>1.000</td>
+      <td>1.515</td>
+      <td>0.670</td>
+    </tr>
+    <tr>
+      <td>mixed_credibility</td>
+      <td>henmi_copas</td>
+      <td>2</td>
+      <td>0.185</td>
+      <td>0.211</td>
+      <td>1.000</td>
+      <td>1.329</td>
+      <td>0.452</td>
+    </tr>
+    <tr>
+      <td>mixed_credibility</td>
+      <td>tbema</td>
+      <td>2</td>
+      <td>-0.386</td>
+      <td>0.477</td>
+      <td>1.000</td>
+      <td>3.595</td>
+      <td>7.952</td>
+    </tr>
+    <tr>
+      <td>moderate_bias</td>
+      <td>dersimonian_laird</td>
+      <td>2</td>
+      <td>0.002</td>
+      <td>0.401</td>
+      <td>0.500</td>
+      <td>0.712</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>moderate_bias</td>
+      <td>exact_baseline</td>
+      <td>2</td>
+      <td>-0.108</td>
+      <td>0.534</td>
+      <td>0.000</td>
+      <td>0.743</td>
+      <td>1.220</td>
+    </tr>
+    <tr>
+      <td>moderate_bias</td>
+      <td>henmi_copas</td>
+      <td>2</td>
+      <td>0.008</td>
+      <td>0.408</td>
+      <td>0.000</td>
+      <td>0.675</td>
+      <td>0.430</td>
+    </tr>
+    <tr>
+      <td>moderate_bias</td>
+      <td>tbema</td>
+      <td>2</td>
+      <td>-0.304</td>
+      <td>0.508</td>
+      <td>1.000</td>
+      <td>2.936</td>
+      <td>10.132</td>
+    </tr>
+    <tr>
+      <td>sparse_high_bias</td>
+      <td>dersimonian_laird</td>
+      <td>2</td>
+      <td>-0.033</td>
+      <td>0.348</td>
+      <td>1.000</td>
+      <td>1.106</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>sparse_high_bias</td>
+      <td>exact_baseline</td>
+      <td>2</td>
+      <td>-0.182</td>
+      <td>0.552</td>
+      <td>0.500</td>
+      <td>1.151</td>
+      <td>0.400</td>
+    </tr>
+    <tr>
+      <td>sparse_high_bias</td>
+      <td>henmi_copas</td>
+      <td>2</td>
+      <td>-0.002</td>
+      <td>0.379</td>
+      <td>1.000</td>
+      <td>1.188</td>
+      <td>0.331</td>
+    </tr>
+    <tr>
+      <td>sparse_high_bias</td>
+      <td>tbema</td>
+      <td>2</td>
+      <td>-0.544</td>
+      <td>0.823</td>
+      <td>1.000</td>
+      <td>2.880</td>
+      <td>7.654</td>
+    </tr>
+    <tr>
+      <td>transport_shift</td>
+      <td>dersimonian_laird</td>
+      <td>2</td>
+      <td>0.527</td>
+      <td>0.702</td>
+      <td>0.500</td>
+      <td>0.689</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>transport_shift</td>
+      <td>exact_baseline</td>
+      <td>2</td>
+      <td>0.511</td>
+      <td>0.719</td>
+      <td>0.500</td>
+      <td>0.659</td>
+      <td>0.396</td>
+    </tr>
+    <tr>
+      <td>transport_shift</td>
+      <td>henmi_copas</td>
+      <td>2</td>
+      <td>0.664</td>
+      <td>0.740</td>
+      <td>0.500</td>
+      <td>0.850</td>
+      <td>0.336</td>
+    </tr>
+    <tr>
+      <td>transport_shift</td>
+      <td>tbema</td>
+      <td>2</td>
+      <td>0.535</td>
+      <td>1.250</td>
+      <td>1.000</td>
+      <td>4.723</td>
+      <td>7.932</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Figures</h2>
+<h3>RMSE</h3><img src='figures/rmse_by_scenario.png' alt='RMSE by scenario'>
+<h3>Bias</h3><img src='figures/bias_by_scenario.png' alt='Bias by scenario'>
+<h3>Coverage</h3><img src='figures/coverage_by_scenario.png' alt='Coverage by scenario'>
+<h3>Speed-Accuracy Frontier</h3><img src='figures/speed_accuracy_frontier.png' alt='Speed accuracy frontier'>
+</body></html>

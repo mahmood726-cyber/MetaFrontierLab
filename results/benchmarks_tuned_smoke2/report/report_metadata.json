@@ -1,0 +1,107 @@
+{
+  "created_at_utc": "2026-04-01T11:37:32.705174+00:00",
+  "overall_method_metrics": [
+    {
+      "method": "dersimonian_laird",
+      "successful_runs": 4,
+      "scenario_count": 4,
+      "bias": -0.1593731722,
+      "mean_absolute_error": 0.230261319,
+      "rmse": 0.2801542503,
+      "coverage_95": 1.0,
+      "mean_ci_width": 1.0250396966,
+      "mean_tau": 0.3242852518,
+      "mean_elapsed_sec": 0.00150985
+    },
+    {
+      "method": "robma_bibma_external",
+      "successful_runs": 4,
+      "scenario_count": 4,
+      "bias": -0.16125,
+      "mean_absolute_error": 0.24675,
+      "rmse": 0.2978208354,
+      "coverage_95": 0.75,
+      "mean_ci_width": 0.976,
+      "mean_tau": 0.4935,
+      "mean_elapsed_sec": 8.1025212058
+    },
+    {
+      "method": "metafor_selmodel_external",
+      "successful_runs": 4,
+      "scenario_count": 4,
+      "bias": -0.1939227961,
+      "mean_absolute_error": 0.2712329248,
+      "rmse": 0.3242001649,
+      "coverage_95": 0.75,
+      "mean_ci_width": 1.2097850355,
+      "mean_tau": 0.3669472613,
+      "mean_elapsed_sec": 2.1127599525
+    },
+    {
+      "method": "henmi_copas",
+      "successful_runs": 4,
+      "scenario_count": 4,
+      "bias": -0.0389741093,
+      "mean_absolute_error": 0.3506603818,
+      "rmse": 0.3533776348,
+      "coverage_95": 0.75,
+      "mean_ci_width": 1.127414777,
+      "mean_tau": 0.3242852518,
+      "mean_elapsed_sec": 0.2937368388
+    },
+    {
+      "method": "metafor_trimfill_external",
+      "successful_runs": 4,
+      "scenario_count": 4,
+      "bias": 0.0523131817,
+      "mean_absolute_error": 0.3676049018,
+      "rmse": 0.3860525847,
+      "coverage_95": 1.0,
+      "mean_ci_width": 1.1154754803,
+      "mean_tau": 0.5071589963,
+      "mean_elapsed_sec": 1.962305267
+    },
+    {
+      "method": "tbema",
+      "successful_runs": 4,
+      "scenario_count": 4,
+      "bias": -0.3008155758,
+      "mean_absolute_error": 0.3308950898,
+      "rmse": 0.397355077,
+      "coverage_95": 1.0,
+      "mean_ci_width": 2.6035123371,
+      "mean_tau": 0.2735636162,
+      "mean_elapsed_sec": 12.7857540808
+    },
+    {
+      "method": "copas_selection_external",
+      "successful_runs": 4,
+      "scenario_count": 4,
+      "bias": -0.0540476525,
+      "mean_absolute_error": 0.4864831881,
+      "rmse": 0.5018187987,
+      "coverage_95": 0.5,
+      "mean_ci_width": 1.0817320444,
+      "mean_tau": 0.1478240223,
+      "mean_elapsed_sec": 4.7047766745
+    },
+    {
+      "method": "exact_baseline",
+      "successful_runs": 4,
+      "scenario_count": 4,
+      "bias": -0.5257522324,
+      "mean_absolute_error": 0.5289636382,
+      "rmse": 0.6110280974,
+      "coverage_95": 0.5,
+      "mean_ci_width": 1.2434534266,
+      "mean_tau": 0.529407613,
+      "mean_elapsed_sec": 0.3389517535
+    }
+  ],
+  "figure_paths": {
+    "bias": "results/benchmarks_tuned_smoke2/report/figures/bias_by_scenario.png",
+    "rmse": "results/benchmarks_tuned_smoke2/report/figures/rmse_by_scenario.png",
+    "coverage": "results/benchmarks_tuned_smoke2/report/figures/coverage_by_scenario.png",
+    "speed_accuracy": "results/benchmarks_tuned_smoke2/report/figures/speed_accuracy_frontier.png"
+  }
+}

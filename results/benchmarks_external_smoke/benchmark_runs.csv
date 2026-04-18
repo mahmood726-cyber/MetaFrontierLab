@@ -1,0 +1,2 @@
+scenario,description,replication,method,status,estimate,std_error,ci_low,ci_high,tau,elapsed_sec,note,true_target_effect,observed_study_count,full_study_count,target_profile_1,target_profile_2,study_profile_shift_1,study_profile_shift_2,heterogeneity_setting,publication_strength_setting,rare_event_logit_setting,observational_fraction_setting
+moderate_bias,Moderate publication bias with modest heterogeneity and mostly randomized evidence.,0,robma_bibma_external,skipped,,,,,,0.0020416649999788206,Rscript not found,-0.35,13,24,0.0,0.0,0.0,0.0,0.18,0.75,-3.1,0.25

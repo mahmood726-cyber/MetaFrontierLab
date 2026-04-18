@@ -1,0 +1,2 @@
+scenario,method,replications_total,successful_runs,skipped_runs,error_runs,success_rate,mean_observed_studies,mean_elapsed_sec,mean_estimate,bias,mean_absolute_error,rmse,coverage_95,mean_ci_width,mean_tau
+moderate_bias,robma_bibma_external,1,0,1,0,0.0,13.0,0.0020416649999788206,,,,,,,

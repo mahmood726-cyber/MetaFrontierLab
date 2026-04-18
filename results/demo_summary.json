@@ -1,0 +1,30 @@
+{
+  "true_target_effect": -0.35,
+  "target_profile_1": 0.0,
+  "target_profile_2": 0.0,
+  "target_moderators": [
+    0.0,
+    0.0
+  ],
+  "study_profile_shift_1": 0.0,
+  "study_profile_shift_2": 0.0,
+  "full_study_count": 20,
+  "observed_study_count": 16,
+  "frontier_estimate": 0.31081546598052734,
+  "frontier_std_error": 0.42595577608456536,
+  "frontier_ci_low": -0.5240578551452207,
+  "frontier_ci_high": 1.1456887871062755,
+  "frontier_tau": 0.5579146142305755,
+  "frontier_submodel_weights": {
+    "baseline": 0.4544955385324482,
+    "selection_soft": 0.517013457485036,
+    "selection_soft_small": 0.02849100398251568
+  },
+  "naive_estimate": 0.17587110468527106,
+  "naive_std_error": 0.26476054545315925,
+  "naive_ci_low": -0.343059564402921,
+  "naive_ci_high": 0.6948017737734631,
+  "naive_tau": 0.14931391030009647,
+  "frontier_error": 0.6608154659805273,
+  "naive_error": 0.5258711046852711
+}

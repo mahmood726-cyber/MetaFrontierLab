@@ -1,0 +1,71 @@
+{
+  "created_at_utc": "2026-04-01T11:08:11.004859+00:00",
+  "overall_method_metrics": [
+    {
+      "method": "dersimonian_laird",
+      "successful_runs": 12,
+      "scenario_count": 4,
+      "bias": 0.2539599228,
+      "mean_absolute_error": 0.384813928,
+      "rmse": 0.4909509303,
+      "coverage_95": 0.6666666667,
+      "mean_ci_width": 0.8709423112,
+      "mean_tau": 0.3605591971,
+      "mean_elapsed_sec": 0.000748255
+    },
+    {
+      "method": "robma_bibma_external",
+      "successful_runs": 12,
+      "scenario_count": 4,
+      "bias": 0.2666666667,
+      "mean_absolute_error": 0.4026666667,
+      "rmse": 0.5003785234,
+      "coverage_95": 0.5833333333,
+      "mean_ci_width": 0.814,
+      "mean_tau": 0.44625,
+      "mean_elapsed_sec": 12.1693538127
+    },
+    {
+      "method": "henmi_copas",
+      "successful_runs": 12,
+      "scenario_count": 4,
+      "bias": 0.334032268,
+      "mean_absolute_error": 0.4639104317,
+      "rmse": 0.532190907,
+      "coverage_95": 0.5833333333,
+      "mean_ci_width": 0.9916004234,
+      "mean_tau": 0.3605591971,
+      "mean_elapsed_sec": 0.5299240382
+    },
+    {
+      "method": "exact_baseline",
+      "successful_runs": 12,
+      "scenario_count": 4,
+      "bias": 0.1003222972,
+      "mean_absolute_error": 0.5025024956,
+      "rmse": 0.5880451375,
+      "coverage_95": 0.5,
+      "mean_ci_width": 1.042802987,
+      "mean_tau": 0.4858378787,
+      "mean_elapsed_sec": 0.8145602337
+    },
+    {
+      "method": "tbema",
+      "successful_runs": 12,
+      "scenario_count": 4,
+      "bias": -0.0085369313,
+      "mean_absolute_error": 0.546312283,
+      "rmse": 0.7337719383,
+      "coverage_95": 1.0,
+      "mean_ci_width": 4.805017125,
+      "mean_tau": 0.1798451321,
+      "mean_elapsed_sec": 9.9967719878
+    }
+  ],
+  "figure_paths": {
+    "bias": "results/benchmarks_with_robma/report/figures/bias_by_scenario.png",
+    "rmse": "results/benchmarks_with_robma/report/figures/rmse_by_scenario.png",
+    "coverage": "results/benchmarks_with_robma/report/figures/coverage_by_scenario.png",
+    "speed_accuracy": "results/benchmarks_with_robma/report/figures/speed_accuracy_frontier.png"
+  }
+}

@@ -1,0 +1,15 @@
+study,treat_events,control_events,treat_total,control_total
+study_01,1,5,146,80
+study_03,0,4,175,76
+study_04,2,5,160,205
+study_07,0,2,178,102
+study_09,2,7,169,233
+study_10,2,3,208,165
+study_13,13,1,193,66
+study_15,2,9,112,195
+study_17,0,0,74,45
+study_18,12,7,167,137
+study_20,0,0,100,118
+study_22,0,2,113,134
+study_25,35,5,217,70
+study_26,9,6,95,104

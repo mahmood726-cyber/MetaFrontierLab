@@ -1,0 +1,20 @@
+[
+  {
+    "scenario":"moderate_bias",
+    "method":"robma_bibma_external",
+    "replications_total":1,
+    "successful_runs":1,
+    "skipped_runs":0,
+    "error_runs":0,
+    "success_rate":1.0,
+    "mean_observed_studies":13.0,
+    "mean_elapsed_sec":13.204130796,
+    "mean_estimate":-0.818,
+    "bias":-0.468,
+    "mean_absolute_error":0.468,
+    "rmse":0.468,
+    "coverage_95":0.0,
+    "mean_ci_width":0.836,
+    "mean_tau":0.329
+  }
+]
