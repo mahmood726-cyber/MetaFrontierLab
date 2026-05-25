@@ -1,5 +1,7 @@
 # MetaFrontierLab
 
+[![ci](https://github.com/mahmood726-cyber/MetaFrontierLab/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/mahmood726-cyber/MetaFrontierLab/actions/workflows/ci.yml) [![codeql](https://github.com/mahmood726-cyber/MetaFrontierLab/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/mahmood726-cyber/MetaFrontierLab/actions/workflows/codeql.yml) [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![python: 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
+
 MetaFrontierLab is a new prototype meta-analysis framework built in `C:\MetaFrontierLab`.
 
 It does not pretend to be a validated statistical breakthrough. It is a research-grade implementation that takes several strong recent developments in meta-analysis and pushes them into one combined workflow:
