@@ -1,14 +1,14 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass
-from functools import lru_cache
 import json
-from pathlib import Path
 import shutil
 import subprocess
 import tempfile
 import time
-from typing import Callable
+from collections.abc import Callable
+from dataclasses import asdict, dataclass
+from functools import cache, lru_cache
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -18,7 +18,13 @@ from scipy.stats import gamma as gamma_dist
 from scipy.stats import norm
 
 from .core import FrontierMetaAnalyzer, SubmodelSpec, make_tbema_analyzer
-from .simulation import SimulationConfig, moderator_columns, naive_random_effects_log_or, profile_columns, target_moderators_for_config
+from .simulation import (
+    SimulationConfig,
+    moderator_columns,
+    naive_random_effects_log_or,
+    profile_columns,
+    target_moderators_for_config,
+)
 
 
 @dataclass
@@ -213,7 +219,7 @@ def _rscript_path() -> str | None:
     return rscript
 
 
-@lru_cache(maxsize=None)
+@cache
 def _r_package_environment(packages: tuple[str, ...]) -> tuple[bool, str]:
     rscript = _rscript_path()
     if rscript is None:

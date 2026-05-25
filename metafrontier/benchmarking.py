@@ -1,8 +1,8 @@
 from __future__ import annotations
 
+import json
 from dataclasses import asdict, dataclass, replace
 from datetime import datetime, timezone
-import json
 from pathlib import Path
 
 import numpy as np
@@ -151,13 +151,13 @@ def _summarize_benchmarks(run_df: pd.DataFrame) -> pd.DataFrame:
         ok["error"] = ok["estimate"] - ok["true_target_effect"]
         ok["covered"] = (ok["ci_low"] <= ok["true_target_effect"]) & (ok["true_target_effect"] <= ok["ci_high"])
         ok["ci_width"] = ok["ci_high"] - ok["ci_low"]
-        successful_runs = int(len(ok))
-        ok_status_runs = int(len(ok_status))
+        successful_runs = len(ok)
+        ok_status_runs = len(ok_status)
 
         record = {
             "scenario": scenario,
             "method": method,
-            "replications_total": int(len(group)),
+            "replications_total": len(group),
             "ok_status_runs": ok_status_runs,
             "successful_runs": successful_runs,
             "invalid_ok_runs": ok_status_runs - successful_runs,

@@ -1,10 +1,10 @@
 # sentinel:skip-file — hardcoded paths / templated placeholders are fixture/registry/audit-narrative data for this repo's research workflow, not portable application configuration. Same pattern as push_all_repos.py and E156 workbook files.
 from __future__ import annotations
 
-from datetime import datetime, timezone
 import json
+from collections.abc import Iterable
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import Iterable
 
 import matplotlib
 

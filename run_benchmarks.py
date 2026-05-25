@@ -3,7 +3,13 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from metafrontier import available_benchmark_methods, default_benchmark_scenarios, run_benchmark_suite, write_benchmark_outputs, write_benchmark_report
+from metafrontier import (
+    available_benchmark_methods,
+    default_benchmark_scenarios,
+    run_benchmark_suite,
+    write_benchmark_outputs,
+    write_benchmark_report,
+)
 
 
 def parse_args() -> argparse.Namespace:

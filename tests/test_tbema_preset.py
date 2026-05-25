@@ -2,9 +2,17 @@ from __future__ import annotations
 
 import pytest
 
-from metafrontier import SimulationConfig, make_tbema_analyzer, simulate_publication_biased_binary_meta
+from metafrontier import (
+    SimulationConfig,
+    make_tbema_analyzer,
+    simulate_publication_biased_binary_meta,
+)
 from metafrontier.benchmark_methods import _tbema_payload
-from metafrontier.simulation import moderator_columns, profile_columns, target_moderators_for_config
+from metafrontier.simulation import (
+    moderator_columns,
+    profile_columns,
+    target_moderators_for_config,
+)
 
 
 def test_tbema_payload_matches_canonical_preset() -> None:

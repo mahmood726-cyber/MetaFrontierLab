@@ -130,7 +130,7 @@ def simulate_publication_biased_binary_meta(config: SimulationConfig) -> tuple[p
         "study_profile_shift_1": float(profile_shift[0]),
         "study_profile_shift_2": float(profile_shift[1]),
         "full_study_count": int(k),
-        "observed_study_count": int(len(observed)),
+        "observed_study_count": len(observed),
     }
     return observed, truth
 
