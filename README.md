@@ -2,7 +2,7 @@
 
 [![ci](https://github.com/mahmood726-cyber/MetaFrontierLab/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/mahmood726-cyber/MetaFrontierLab/actions/workflows/ci.yml) [![codeql](https://github.com/mahmood726-cyber/MetaFrontierLab/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/mahmood726-cyber/MetaFrontierLab/actions/workflows/codeql.yml) [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![python: 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 
-MetaFrontierLab is a new prototype meta-analysis framework built in `C:\MetaFrontierLab`.
+MetaFrontierLab is a prototype meta-analysis framework for rapid frontier-method development.
 
 It does not pretend to be a validated statistical breakthrough. It is a research-grade implementation that takes several strong recent developments in meta-analysis and pushes them into one combined workflow:
 
@@ -114,36 +114,31 @@ The design draws directly from these recent primary sources:
 ## Run
 
 ```bash
-cd /mnt/c/MetaFrontierLab
-python3 run_demo.py
+python run_demo.py
 ```
 
 To run the benchmark suite:
 
 ```bash
-cd /mnt/c/MetaFrontierLab
-python3 run_benchmarks.py --replications 4
+python run_benchmarks.py --replications 4
 ```
 
 To generate the report from benchmark outputs:
 
 ```bash
-cd /mnt/c/MetaFrontierLab
-python3 generate_benchmark_report.py --benchmark-dir results/benchmarks
+python generate_benchmark_report.py --benchmark-dir results/benchmarks
 ```
 
 Or in one step:
 
 ```bash
-cd /mnt/c/MetaFrontierLab
-python3 run_benchmarks.py --replications 4 --report
+python run_benchmarks.py --replications 4 --report
 ```
 
 To create a PDF report from an existing benchmark directory:
 
 ```bash
-cd /mnt/c/MetaFrontierLab
-python3 generate_benchmark_pdf.py --benchmark-dir results/benchmarks_scaled_full
+python generate_benchmark_pdf.py --benchmark-dir results/benchmarks_scaled_full
 ```
 
 ## Output

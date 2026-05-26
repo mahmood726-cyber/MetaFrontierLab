@@ -1,11 +1,15 @@
 {
+  "title": "MetaFrontierLab: Prototype Meta-Analysis Framework for Frontier Methods Development",
   "slug": "metafrontierlab",
+  "path": "..",
   "repo_url": "https://github.com/mahmood726-cyber/metafrontierlab",
   "pages_url": "https://mahmood726-cyber.github.io/metafrontierlab/",
   "author": "Mahmood Ahmad",
   "affiliation": "Tahir Heart Institute",
   "status": "DRAFT",
   "created": "2026-04-07",
+  "date": "2026-04-07",
+  "type": "methods",
   "references": [
     "Borenstein M, Hedges LV, Higgins JPT, Rothstein HR. Introduction to Meta-Analysis. 2nd ed. Wiley; 2021.",
     "Higgins JPT, Thompson SG, Deeks JJ, Altman DG. Measuring inconsistency in meta-analyses. BMJ. 2003;327(7414):557-560.",
